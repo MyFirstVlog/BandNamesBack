@@ -16,7 +16,7 @@ class Sockets {
         // On connection
         this.io.on('connection', ( socket ) => {
 
-            console.log('cliente conectado');
+            console.log('cliente conectado', socket.conn.id);
 
             //* Emitir al cliente conectado todas las bandas actuales
 
